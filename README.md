@@ -37,7 +37,8 @@ mern-job-portal/
 
 ### 1. Clone the Repo
 
-git clone https://github.com/your-username/mern-job-portal.git
+git clone https://github.com/Anisha-GH/Job-Portal.git
+
 cd mern-job-portal
 
 ### 2. Backend Setup
