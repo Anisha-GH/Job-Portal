@@ -140,6 +140,17 @@ const JobSeekerCard = ({ element, deleteApplication, openModal }) => {
         <p>
           <span>CoverLetter:</span> {element.coverLetter}
         </p>
+
+        {/* ✅ New Line for Job Status */}
+        <p>
+          <span>Job:</span>{" "}
+          {element.jobDeleted || element?.jobID?.expired ? (
+            <span style={{ color: "red" }}>This job was removed or expired.</span>
+          ) : (
+            element?.jobID?.title || "Job Info Unavailable"
+          )}
+        </p>
+
       </div>
       <div className="resume">
         <img
